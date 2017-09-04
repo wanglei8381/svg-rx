@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta lang="zh">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="keyword" content="">
+  <title>柱状图</title>
+  <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+  <style>
+    .histogram-container {
+      width: 80%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+<div class="histogram-container">
+  <svg width="100%" height="600">
+    <defs>
+      <clipPath id="clip">
+        <rect x="0" y="0" width="100%" height="500"></rect>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#clip)">
+      <g class="animated fadeInUp">
+        <text x="20" y="290">1次</text>
+        <rect x="20" y="300" width="20" height="200" fill="#fb3"></rect>
+      </g>
+      <g class="animated fadeInUp" style="animation-delay: .1s">
+        <text x="60" y="330">100次</text>
+        <rect x="60" y="350" width="20" height="150" fill="#fb3"></rect>
+      </g>
+      <g class="animated fadeInUp" style="animation-delay: .2s">
+        <text x="100" y="380">100次</text>
+        <rect x="100" y="400" width="20" height="100" fill="#fb3"></rect>
+      </g>
+    </g>
+    <line x1="0" y1="500" x2="100%" y2="500" stroke="red"></line>
+    <g>
+      <text x="0" y="520" textLength="80">热度ssssss</text>
+      <text x="100" y="520">热度</text>
+      <text x="200" y="520">热度</text>
+      <text x="300" y="520">热度</text>
+      <text x="400" y="520">热度</text>
+      <text x="500" y="520">热度</text>
+      <text x="600" y="520">热度</text>
+    </g>
+  </svg>
+</div>
+</body>
+</html>
